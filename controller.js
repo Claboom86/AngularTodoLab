@@ -19,6 +19,17 @@ function TodoController () {
             completed: true
         }
     ];
+    vm.addTask = (taskToAdd) => {
+        vm.list.push({task: taskToAdd.task, completed: false});
+    };
+    vm.removeTask = (index) => {
+        vm.list.splice(index, 1);
+    };
+    vm.completeTask = (item) => {
+        console.log("yay");
+        item.completed = true;
+        console.log(vm.list);
+    };
 }
 
 

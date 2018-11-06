@@ -6,9 +6,9 @@ body {
 .main-container {
     background-color: white;
     position: relative;
-    min-height: 500px;
-    height: auto;
     width: 470px;
+    height: auto;
+    min-height: 500px;
     margin: 0 auto;
     top: 100px;
     border-radius: 5px;
@@ -57,16 +57,22 @@ p {
 }
 
 .add-btn {
-    color: white;
-    background-color: #ff1493;
+    color: black;
+    background-color: #eee;
     position: relative;
     width: 410px;
     height: 50px;
     left: 30px;
     top: 25px;
+    bottom: 10px;
     border-radius: 5px;
     padding: 10px;
     font-size: 14px;
+}
+
+.add-btn:hover {
+    color: white;
+    background-color: #ff1493;
 }
 
 .complete-btn {
